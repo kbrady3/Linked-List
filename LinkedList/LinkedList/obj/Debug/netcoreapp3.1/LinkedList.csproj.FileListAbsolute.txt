@@ -1,0 +1,11 @@
+C:\Users\Kabrina\Documents\GitHub Repos\Linked-List\LinkedList\LinkedList\bin\Debug\netcoreapp3.1\LinkedList.exe
+C:\Users\Kabrina\Documents\GitHub Repos\Linked-List\LinkedList\LinkedList\bin\Debug\netcoreapp3.1\LinkedList.deps.json
+C:\Users\Kabrina\Documents\GitHub Repos\Linked-List\LinkedList\LinkedList\bin\Debug\netcoreapp3.1\LinkedList.runtimeconfig.json
+C:\Users\Kabrina\Documents\GitHub Repos\Linked-List\LinkedList\LinkedList\bin\Debug\netcoreapp3.1\LinkedList.runtimeconfig.dev.json
+C:\Users\Kabrina\Documents\GitHub Repos\Linked-List\LinkedList\LinkedList\bin\Debug\netcoreapp3.1\LinkedList.dll
+C:\Users\Kabrina\Documents\GitHub Repos\Linked-List\LinkedList\LinkedList\bin\Debug\netcoreapp3.1\LinkedList.pdb
+C:\Users\Kabrina\Documents\GitHub Repos\Linked-List\LinkedList\LinkedList\obj\Debug\netcoreapp3.1\LinkedList.csprojAssemblyReference.cache
+C:\Users\Kabrina\Documents\GitHub Repos\Linked-List\LinkedList\LinkedList\obj\Debug\netcoreapp3.1\LinkedList.AssemblyInfoInputs.cache
+C:\Users\Kabrina\Documents\GitHub Repos\Linked-List\LinkedList\LinkedList\obj\Debug\netcoreapp3.1\LinkedList.AssemblyInfo.cs
+C:\Users\Kabrina\Documents\GitHub Repos\Linked-List\LinkedList\LinkedList\obj\Debug\netcoreapp3.1\LinkedList.dll
+C:\Users\Kabrina\Documents\GitHub Repos\Linked-List\LinkedList\LinkedList\obj\Debug\netcoreapp3.1\LinkedList.pdb

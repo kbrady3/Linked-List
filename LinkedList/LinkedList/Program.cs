@@ -6,7 +6,9 @@ namespace LinkedList
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            LinkedList l = new LinkedList(6);
+
+            l.PeekFirst();
         }
     }
 }
