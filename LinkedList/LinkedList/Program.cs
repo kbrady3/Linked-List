@@ -12,10 +12,16 @@ namespace LinkedList
             l.Add(1, 10);
             l.Add(0, 99);
             l.Add(1, 87);
+            l.Remove(2);
+            l.Add(2, 65);
+            //l.AddLast(9876);
+            Console.WriteLine("Size " + l.Size());
+            
 
             Console.WriteLine(l.Print());
 
-            //should display 99, 10
+            Console.WriteLine("Peek first " + l.PeekFirst());
+
         }
     }
 }
