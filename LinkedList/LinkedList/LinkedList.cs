@@ -12,7 +12,7 @@ namespace LinkedList
 
         public LinkedList() {
             First = -1;
-            MaxSize = 100;
+            MaxSize = 10;
             ListItems = new double[MaxSize];
         }
 
@@ -36,8 +36,8 @@ namespace LinkedList
             }
             else
             {
-                double[] tempArray = new double[MaxSize + 10];
-                double[] tempArray2 = new double[MaxSize + 10];
+                double[] tempArray = new double[100];
+                double[] tempArray2 = new double[100];
                 
                 if (ListItems[MaxSize - 1] == 0)
                 {
