@@ -6,9 +6,16 @@ namespace LinkedList
     {
         static void Main(string[] args)
         {
-            LinkedList l = new LinkedList(6);
+            LinkedList l = new LinkedList();
 
-            l.PeekFirst();
+            l.Add(0, 9);
+            l.Add(1, 10);
+            l.Add(0, 99);
+            l.Add(1, 87);
+
+            Console.WriteLine(l.Print());
+
+            //should display 99, 10
         }
     }
 }

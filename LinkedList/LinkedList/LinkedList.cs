@@ -12,16 +12,8 @@ namespace LinkedList
 
         public LinkedList() {
             First = -1;
-            MaxSize = 5;
+            MaxSize = 100;
             ListItems = new double[MaxSize];
-            ListItems = [9, 8, 7, 6, 5];
-        }
-
-        public LinkedList(int maxSize)
-        {
-            First = -1;
-            MaxSize = maxSize;
-            ListItems = new double[maxSize];
         }
 
         public void AddLast(double item)
@@ -37,20 +29,28 @@ namespace LinkedList
             }
             else
             {
-                //Array.Copy to new array, move up one index from index, copy item to index of original array, then concatenate the arrays
                 double[] tempArray = new double[MaxSize + 1];
+                double[] tempArray2 = new double[MaxSize + 1];
+                
+                if (ListItems[MaxSize - 1] == 0)
+                {
+                    //Array.Copy(originalArray, startIndex, newArray, startIndex, endIndex);
 
-                //Array.Copy(originalArray, startIndex, newArray, startIndex, endIndex);
-                //ARRAY MUST BE RESIZED SINCE EVERYTHING HAS TO BE SHIFTED UP
-                //Array.Resize(ref ListItems, MaxSize + 1);
-                Array.Copy(ListItems, 0, tempArray, 0, MaxSize); 
+                    Array.Copy(ListItems, 0, tempArray, 0, index); //Copies the first part of the array (up to, but not including index)
+                    Array.Copy(ListItems, index, tempArray2, index + 1, MaxSize - 1); //Copies the second part of the array (index inclusive to the end)
 
-                ListItems[index] = item;
+                    ListItems[index] = item; //Now that we have a backup of ListItems, we can overwrite the current value in index with the new value
 
-                Array.Copy(tempArray, index + 1, ListItems, index + 1, MaxSize - 1);
+                    Array.Copy(tempArray2, index + 1, tempArray, index + 1, MaxSize - 1); //Now we combine our temp arrays, so now everything is in tempArray, except there's a blank spot at index
+                    tempArray[index] = item; //Copy the item to the blank spot
+
+                    ListItems = tempArray; //Assign tempArray to ListItems
+                }
+                else
+                {
+                    throw new Exception("List is full.");
+                }
             }
-
-            //Add check for full array
         }
 
         public double PeekFirst()
@@ -116,7 +116,7 @@ namespace LinkedList
             string concat = "";
             foreach(double item in ListItems)
             {
-                concat += item;
+                concat += item + " ";
             }
             return concat;
         }
